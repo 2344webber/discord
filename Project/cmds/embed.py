@@ -6,7 +6,7 @@ import json
 with open('setting.json',mode='r',encoding='utf8')as jfile:
     jdata=json.load(jfile)
 
-class meme(commands.Cog):
+class embed(commands.Cog):
     def __init__(self,bot):
         self.bot=bot
     
@@ -20,4 +20,4 @@ class meme(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(meme(bot))
+    bot.add_cog(embed(bot))
