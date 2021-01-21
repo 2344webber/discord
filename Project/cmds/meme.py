@@ -22,7 +22,7 @@ class meme(Cog_classes):
         await ctx.send(random_pic)
 
     
-    @commands.command()
+    @commands.command()##無法使用(被伺服端禁止)
     async def car(self,ctx,*,msg):
         html=(f'https://nhentai.net/g/{msg}')
         sp=BeautifulSoup(urlopen(html))

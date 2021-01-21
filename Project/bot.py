@@ -13,7 +13,7 @@ bot=commands.Bot(command_prefix='HI!')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name='meme|HI!commands'))
+    await bot.change_presence(activity=discord.Game(name='meme|HI!helps'))
     print(">>Bot is online!<<")
 
 @bot.event
@@ -26,10 +26,10 @@ async def on_member_remove(member):
     channel=bot.get_channel(int(jdata['Lobby_channel']))
     await channel.send(f'{member}被逐出聯盟了!!!')
 
-@bot.command()
-async def report(ctx,*,msg):
-    channel=bot.get_channel(int(jdata['report_channel']))
-    await channel.send(f'<@&593233066340646916> :{msg}')
+@bot.event
+async def on_command_error(ctx,error):
+    if isinstance(error,commands.errors.CommandNotFound):
+        await ctx.send('查無此指令!\n請用`HI!helps`查詢可用指令')
 
 for Filename in os.listdir('./cmds'):
     if Filename.endswith('.py'):
