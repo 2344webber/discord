@@ -1,9 +1,9 @@
 {
     "TOKEN": "BOT's TOKEN",
-    "Lobby_channel": "605300881688363008",
-    "vote_channel": "650877850445938695",
-    "report_channel": "650877850445938695",
-    "car_channel": "647310998251765774",
+    "Lobby_channel": "channel's ID",
+    "vote_channel": "channel's ID",
+    "report_channel": "channel's ID",
+    "car_channel": "channel's ID",
     "url-pic": [
         "https://truth.bahamut.com.tw/s01/201805/058ae36ee38f3747af09849628a68ddf.JPG",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdDk4GDOXI3M18eXrrN__9TbJfuso8Qy62DdZvK6jlqH1YlBEpw",
