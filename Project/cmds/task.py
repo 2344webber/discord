@@ -10,8 +10,8 @@ class task(Cog_classes):
         super().__init__(*args,**kwargs)
         async def time_task():
             await self.bot.wait_until_ready()
-            self.channel=self.bot.get_channel(605058688700645395)
-            self.report=self.bot.get_channel(605033389736591360)
+            self.channel=self.bot.get_channel(#channel's ID)
+            self.report=self.bot.get_channel(#channel's ID)
             while not self.bot.is_closed():
                 now=datetime.datetime.now()
                 now_time=datetime.datetime.now().strftime('%H%M%S')
