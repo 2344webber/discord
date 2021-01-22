@@ -1,9 +1,11 @@
 {
-    "TOKEN":"bot's token",
-    "Lobby_channel":"605300881688363008",
-    "report_channel":"650877850445938695",
-    "car_channel":"647310998251765774",
-    "url-pic":["https://truth.bahamut.com.tw/s01/201805/058ae36ee38f3747af09849628a68ddf.JPG",
+    "TOKEN": "NjA0Njc0MjE4MjUyMzA0Mzk0.XTxYvw.wifZm4yJ8W9BrxJyQkI4KZDG-iM",
+    "Lobby_channel": "605300881688363008",
+    "vote_channel": "650877850445938695",
+    "report_channel": "650877850445938695",
+    "car_channel": "647310998251765774",
+    "url-pic": [
+        "https://truth.bahamut.com.tw/s01/201805/058ae36ee38f3747af09849628a68ddf.JPG",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdDk4GDOXI3M18eXrrN__9TbJfuso8Qy62DdZvK6jlqH1YlBEpw",
         "https://truth.bahamut.com.tw/s01/201803/a9da7eb847cc913838cba8b932986a32.JPG",
         "https://truth.bahamut.com.tw/s01/201803/2cc02927a80fb6851bf73cce26fc7cac.JPG",
@@ -16,8 +18,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5gMCzLk_qkqgCteJ2LvTSo4C2AqoktJ7oUySCcqIPenZ7vO4J",
         "https://s.yimg.com/ny/api/res/1.2/QDSyWyjr6lChUnQJBkhFmQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/ee117c4fe22149cd52eeae301eec1a17",
         "https://media.discordapp.net/attachments/605291402087235586/605380128096387073/66649736_918209251892934_2936372692489601024_n.png?width=442&height=630",
-        "https://1.bp.blogspot.com/-15E7hWg3KQE/WnW_prgrL8I/AAAAAAAApmM/HjdaEXorg0INZgSZF2oZ5NRt6HbzmqGSwCLcBGAs/s1600/5_be%2Bdisappeared.jpg"],
-    "deaf":["https://s3-ap-northeast-1.amazonaws.com/hopenglish/wp/wp-content/uploads/2017/06/use-your-brain.jpg",
+        "https://1.bp.blogspot.com/-15E7hWg3KQE/WnW_prgrL8I/AAAAAAAApmM/HjdaEXorg0INZgSZF2oZ5NRt6HbzmqGSwCLcBGAs/s1600/5_be%2Bdisappeared.jpg"
+    ],
+    "deaf": [
+        "https://s3-ap-northeast-1.amazonaws.com/hopenglish/wp/wp-content/uploads/2017/06/use-your-brain.jpg",
         "https://www.hahatai.com/sites/default/files/u1031/7%E9%84%89%E6%B0%91%E4%BE%86%E5%9C%96%E6%88%B0.jpg",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VC7Bn3AyZCIuuMSTZ12pRwR54Bi05vNiRGUx5pG3XqMhFjcpEw",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gy4YoWxvAVHOcu3VoqN8a5bH8xFvnzF_LISRBMYybgh1OpqQ",
@@ -27,5 +31,8 @@
         "http://friendoprod.blob.core.windows.net/missionpics/images/2293/member/8cf65cf6-3847-4606-af82-cef78e6e16e1.jpg",
         "http://www.dachuantuan.com/uploadfile/2017/1216/20171216102505810.jpg",
         "https://i.imgur.com/1zaviyt.jpg",
-        "https://pic.pimg.tw/chihyangboy/1206245893.jpg"]
+        "https://pic.pimg.tw/chihyangboy/1206245893.jpg"
+    ],
+    "time": "165300",
+    "channel": "605058688700645395"
 }

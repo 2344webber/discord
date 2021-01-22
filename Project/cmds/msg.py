@@ -1,6 +1,7 @@
 import discord
 import json
 import os
+import datetime
 from discord.ext import commands
 from core.classes import Cog_classes
 import gspread
@@ -28,8 +29,9 @@ class message(Cog_classes):
     @commands.command()
     async def report(self,ctx,*,msg):
         channel=self.bot.get_channel(int(jdata['report_channel']))
+        when=datetime.datetime.now()
         name=ctx.message.author
-        await channel.send(f'<@&593233066340646916>\n{name}:{msg}')
+        await channel.send(f'<@&593233066340646916>\n{name}:{msg}\n時間:{when}')
 
 def setup(bot):
     bot.add_cog(message(bot))

@@ -25,6 +25,22 @@ async def on_member_join(member):
 async def on_member_remove(member):
     channel=bot.get_channel(int(jdata['Lobby_channel']))
     await channel.send(f'{member}被逐出聯盟了!!!')
+    
+"""""
+@bot.event
+async def on_reaction_add(data):
+    yes=no=0
+    channel=bot.get_channel(int(jdata['vote_channel']))
+    while(yes>no or no>yes):
+        if data.emoji=='<:pepe:765552259798663199>':
+            yes+=1
+        else:
+            no+=1
+    if yes>no:
+        await channel.send('yes')
+    else:
+        await channel.send('no')
+"""""
 
 @bot.event
 async def on_command_error(ctx,error):
