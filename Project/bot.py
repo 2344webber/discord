@@ -3,7 +3,6 @@ from discord.ext import commands
 import json
 import random
 import asyncio
-import datetime
 import os
 
 with open('setting.json','r',encoding='utf8')as jfile:
