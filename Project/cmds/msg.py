@@ -33,5 +33,11 @@ class message(Cog_classes):
         name=ctx.message.author
         await channel.send(f'<@&593233066340646916>\n{name}:{msg}\n時間:{when}')
 
+    @commands.command()
+    async def msgdel(self,ctx,num:int,ch:int):
+        channel=self.bot.get_channel(ch)
+        await channel.purge(limit=num)
+        await ctx.send(f'已在{channel.mention}清除{num}則訊息!')
+
 def setup(bot):
     bot.add_cog(message(bot))
