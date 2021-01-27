@@ -3,6 +3,7 @@ from discord.ext import commands
 import json
 import random
 import asyncio
+import datetime
 import os
 
 with open('setting.json','r',encoding='utf8')as jfile:
@@ -24,6 +25,15 @@ async def on_member_join(member):
 async def on_member_remove(member):
     channel=bot.get_channel(int(jdata['Lobby_channel']))
     await channel.send(f'{member}被逐出聯盟了!!!')
+
+@bot.event
+async def on_raw_reaction_add(data):
+    if str(data.emoji)==':bow_and_arrow:':
+        guild=bot.get_guild(data.guild_id)
+        channel=bot.get_channel(data.channel_id)
+        role=guild.get_role(702476834771697704)
+        data.member.add_roles(role)
+        await channel.send(f'{data.member.mention}已加入了{role}身分組!')
     
 """""
 @bot.event
