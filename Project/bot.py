@@ -35,7 +35,7 @@ async def on_raw_reaction_add(data):
         data.member.add_roles(role)
         await channel.send(f'{data.member.mention}已加入了{role}身分組!')
     
-"""""
+"""""無法使用
 @bot.event
 async def on_reaction_add(data):
     yes=no=0
