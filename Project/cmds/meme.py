@@ -21,20 +21,5 @@ class meme(Cog_classes):
         random_pic=random.choice(jdata['deaf'])
         await ctx.send(random_pic)
 
-    
-    @commands.command()#無法使用(被伺服端禁止)
-    async def car(self,ctx,*,msg):
-        html=(f'https://nhentai.net/g/{msg}')
-        sp=BeautifulSoup(urlopen(html))
-        try:  
-            title=sp.find("meta", itemprop="image")
-            img=title.get("content")
-            await ctx.send(img)
-        except:
-            await ctx.send('查無此車')
-        finally:
-            return()
-        
-
 def setup(bot):
     bot.add_cog(meme(bot))
