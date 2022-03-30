@@ -20,6 +20,20 @@ class meme(Cog_classes):
     async def deaf(self,ctx):
         random_pic=random.choice(jdata['deaf'])
         await ctx.send(random_pic)
+        
+    @commands.command()#可以使用(沒被伺服端禁止)
+    async def car(self,ctx,*,msg):
+        url="https://nhentai.net/"
+        website=requests.get(url+"g/"+msg+"/")
+        sp=bs(website.text,'lxml')
+        Comic_name = sp.select('div h1')
+        Comic_image=sp.select('#container a')
+        for titles in Comic_name:
+          await ctx.send(titles.text)
+          print(titles.text)
+        for images in Comic_image:
+          await ctx.send(url+images['href'])
+          print(url+images['href'])
 
 def setup(bot):
     bot.add_cog(meme(bot))
